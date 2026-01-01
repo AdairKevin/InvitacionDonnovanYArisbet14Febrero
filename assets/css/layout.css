@@ -7,6 +7,7 @@ body {
   color: var(--txt-body);
   font-size: 0.95rem;
   overflow-x: hidden;
+
 }
 
 .center {
