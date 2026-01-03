@@ -832,3 +832,12 @@ footer a {
     opacity: 0;
   }
 }
+
+.padrinos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: var(--bg-dorado-3);
+  justify-content: center;
+  text-align: center;
+}
