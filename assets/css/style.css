@@ -143,13 +143,13 @@
 .home-img {
   width: 100%;
   height: auto;
+  object-position: top;
   overflow: hidden;
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  aspect-ratio: 16/14;
-  -webkit-mask-image: linear-gradient(to top, black 15%, transparent 100%);
-  mask-image: linear-gradient(to top, black 15%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to top, black 55%, transparent 100%);
+  mask-image: linear-gradient(to top, black 55%, transparent 100%);
 }
 
 .home-txt {
@@ -471,7 +471,7 @@
 
 .slider-photo {
   width: 100%;
-  height: 200px;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -533,14 +533,15 @@
 }
 
 .slider-photo .img {
-  height: 200px;
+  height: 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .slider-photo .img:nth-child(1) {
   background-image: var(--img-F1);
-  background-position: 50% 20%;
+  background-position: 50% 50%;
 }
 
 .slider-photo .img:nth-child(2) {
@@ -773,12 +774,36 @@ footer a {
 }
 
 /* Colores con posiciones y retrasos escalonados */
-.red    { background:#ff6b6b; left: 10%; animation-delay: 0s; }
-.blue   { background:#4dabf7; left: 85%; animation-delay: 1s; }
-.yellow { background:#ffd43b; left: 50%; animation-delay: 3s; }
-.green  { background:#69db7c; left: 30%; animation-delay: 4.5s; }
-.purple { background:#b197fc; left: 70%; animation-delay: 5s; }
-.orange { background:#ffa94d; left: 40%; animation-delay: 6.5s; }
+.red {
+  background: #ff6b6b;
+  left: 10%;
+  animation-delay: 0s;
+}
+.blue {
+  background: #4dabf7;
+  left: 85%;
+  animation-delay: 1s;
+}
+.yellow {
+  background: #ffd43b;
+  left: 50%;
+  animation-delay: 3s;
+}
+.green {
+  background: #69db7c;
+  left: 30%;
+  animation-delay: 4.5s;
+}
+.purple {
+  background: #b197fc;
+  left: 70%;
+  animation-delay: 5s;
+}
+.orange {
+  background: #ffa94d;
+  left: 40%;
+  animation-delay: 6.5s;
+}
 
 @keyframes floatUp {
   0% {
@@ -806,4 +831,13 @@ footer a {
     transform: translate(-4px, -120vh);
     opacity: 0;
   }
+}
+
+.padrinos-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: var(--bg-dorado-3);
+  justify-content: center;
+  text-align: center;
 }
